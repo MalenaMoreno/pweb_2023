@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulacion</title>
+</head>
+<body>
+    <header>
+        <img src="img/meli.jpg" alt="logo meli" height="60" width="60">
+        <nav>
+            <ul>
+                <li> <a href="https://www.mercadolibre.com.ar/ofertas#nav-header">Ofertas</a> </li>
+                <li> <a href="https://www.mercadolibre.com.ar/ofertas#nav-header">Destacados</a> </li>
+                <li> <a href="https://www.mercadolibre.com.ar/ofertas#nav-header">Favoritos</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Trabaja con Nosotros</h1>
+                <h2>Gracias por el interes en nuestra empresa!</h2>
+                <p>Completa el siguiente formulario de postulación</p>
+            </div>
+            <div>
+                <form action="mailto:maleemoreno1@gmail.com">
+                    <fieldset>
+                        <legend>Informacion Personal</legend>
+       ls                 <div>
+                            <label for="fullname">Nombre y Apellido</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Juan Pérez" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="dni">DNI/Pasaporte</label>
+                            <input type="text" id="dni" name="dni" required>
+                        </div>
+                        <div>
+                            <label for="position">Puesto al cual aplica</label>
+                            <select name="position" id="position">
+                                <option value="" selected>Seleccione una opción</option>
+                                <option value="mkt">Analista de Marketing</option>
+                                <option value="fin">Jefe de Finanzas</option>
+                                <option value="rep">Repartidor</option>
+                                <option value="rrhh">Director de Recursos Humanos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cv">Subi tu CV</label>
+                            <input type="file" id="cv" name="cv">
+                        </div>
+                        <div>
+                            <label for="age">Edad</label>
+                            <input type="number" id="age" name="age" min="18" max="80" step="0.5">
+                        </div>
+                        <div>
+                            <p>Idiomas</p>
+                            <input type="checkbox" id="language-spanish" value="spanish" name="language">
+                            <label for="language-spanish">Español</label>
+
+                            <input type="checkbox" id="language-english" value="english" name="language">
+                            <label for="language-english">Inglés</label>
+
+                            <input type="checkbox" id="language-french" value="french" name="language">
+                            <label for="language-french">Francés</label>
+
+                            <input type="checkbox" id="language-german" value="german" name="language">
+                            <label for="language-german">Alemán</label>
+                        </div>
+                        <div>
+                            <label for="telephone">Telefono</label>
+                            <input type="tel" id="telephone" name="telephone" maxlength="12">
+                        </div>
+                        <div>
+                            <label for="linkedin">Linked-In</label>
+                            <input type="text" id="linkedin" name="linkedin">
+                        </div>
+                        <div>
+                            <label for="cover-letter">Carta de Presentación</label>
+                            <textarea name="cover-letter" id="cover-letter" cols="30" rows="10" maxlength="5000" placeholder="Contanos porque querés trabajar con nosotros"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferencias de Trabajo</legend>
+                        <div>
+                            <p>Disponibilidad Horarias</p>
+                            <input type="radio" name="working-preference" id="morning">
+                            <label for="morning">Mañana</label>
+                            <input type="radio" name="working-preference" id="evening">
+                            <label for="evening">Tarde</label> 
+                        </div>
+                        <div>
+                            <p>Forma de Trabajo</p>
+                            <input type="radio" name="working-place" id="remote">
+                            <label for="remote">Virtual</label>
+                            <input type="radio" name="working-place" id="face-to-face">
+                            <label for="face-to-face">Presencial</label>
+                        </div>
+                        <div>
+                            <label for="start-date">Comienzo</label>
+                            <input type="datetime-local" name="start-date" id="start-date">
+                        </div>
+                    </fieldset>
+
+
+                        <button type="submit"> ENVIAR </button>
+
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/company/mercadolibre/">Trabajá con Nosotros</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

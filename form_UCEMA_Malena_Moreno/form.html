@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulacion - Club de Emprendedores</title>
+</head>
+<body>
+        <header>
+            <img src="images/ucema_logo_vertical.png" alt="logo ucema">
+            <div>
+                <h1>Registro para el Club de Emprendedores de UCEMA</h1>
+                <h2>¡Sumate al equipo!</h2>
+                <p>Completa el siguiente formulario de postulación</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <form action="mailto:mmoreno25@ucema.edu.ar">
+                        <fieldset>
+                            <legend><strong>Informacion Personal</strong></legend>
+                            <div>
+                                <label for="fullname">Nombre Completo</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Juan Pérez" required>
+                            </div>
+                            <div>
+                                <label for="email">Correo Electronico de UCEMA</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="birth-date">Fecha de Nacimiento</label>
+                                <input type="date" name="birth-date" id="birth-date">
+                            </div>
+                            <div>
+                                <label for="career">Carrera o especialidad</label>
+                                <input type="text" id="career" name="career" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Sobre tu emprendimiento/interés</strong></legend>
+                            <div>
+                                <p>¿Tienes un emprendimiento en marcha?</p>
+                                <input type="radio" name="entrepreneurship" id="yes">
+                                <label for="yes">Sí</label>
+                                <input type="radio" name="entrepreneurship" id="no">
+                                <label for="no">No</label>
+                            </div>
+                            <div>
+                                <label for="entrepreneurship-name">Nombre del Emprendimiento</label>
+                                <input type="text" id="entrepreneurship-name" name="entrepreneurship-name">
+                            </div>
+                            <div>
+                                <label for="description">Descripción breve del emprendimiento o área de interés</label>
+                                <textarea name="description" id="description" cols="30" rows="10" maxlength="5000" placeholder="Dejanos algun detalle de tu emprendimiento o algo que quieras destacar sobre ello"></textarea>
+                            </div>
+                            <div>
+                                <label for="date">Fecha y hora de lanzamiento o evento importante relacionado con el emprendimiento</label>
+                                <input type="datetime-local" id="date" name="date">
+                            </div>
+                            <div>
+                                <label for="relevant-file">Si lo deseas, compartinos algún archivo para que tengamos mayor información sobre tu emprendimiento!</label>
+                                <input type="file" id="relevant-file" name="relevant-file">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Participación en el Club</strong></legend>
+                            <div>
+                                <p>¿Te gustaría dar una charla o taller?</p>
+                                <input type="radio" name="workshop" id="yes">
+                                <label for="yes">Sí</label>
+                                <input type="radio" name="workshop" id="no">
+                                <label for="no">No</label>
+                            </div>
+                            <div>
+                                <p>Temas de Interés</p>
+                                <input type="checkbox" id="interest-financing" value="financing" name="interest">
+                                <label for="interest-financing">Financiación</label>
+    
+                                <input type="checkbox" id="interest-marketing" value="marketing" name="interest">
+                                <label for="interest-marketing">Marketing</label>
+    
+                                <input type="checkbox" id="interest-strategy" value="strategy" name="interest">
+                                <label for="interest-strategy">Estrategia de Negocios</label>
+    
+                                <input type="checkbox" id="interest-tech" value="tech" name="interest">
+                                <label for="interest-tech">Tecnología</label>
+
+                                <input type="checkbox" id="interest-other" value="other" name="interest">
+                                <label for="interest-other">Otros</label>
+                            </div>
+                        </fieldset> 
+                        <fieldset>
+                            <legend><strong>Disponibilidad</strong></legend>
+                            <div>
+                                <p>Días de semana que prefieres para las reuniones</p>
+                                <input type="checkbox" id="day-preference-mon" value="monday" name="day-preference">
+                                <label for="day-preference-mon">Lunes</label>
+
+                                <input type="checkbox" id="day-preference-tue" value="tuesday" name="day-preference">
+                                <label for="day-preference-tue">Martes</label>
+
+                                <input type="checkbox" id="day-preference-wed" value="wednesday" name="day-preference">
+                                <label for="day-preferences-wed">Miércoles</label>
+
+                                <input type="checkbox" id="day-preference-thu" value="thursday" name="day-preference">
+                                <label for="day-preference-thu">Jueves</label>
+
+                                <input type="checkbox" id="day-preference-fri" value="friday" name="day-preference">
+                                <label for="day-preference-fri">Viernes</label>
+
+                                <input type="checkbox" id="day-preference-sat" value="saturday" name="day-preference">
+                                <label for="day-preference-sat">Sábado</label>
+
+                                <input type="checkbox" id="day-preference-sun" value="sunday" name="day-preference">
+                                <label for="day-preference-sun">Domingo</label>
+                            </div>
+                            <div>
+                                <p>Horario preferido</p>
+                                <input type="radio" name="time-preference" id="morning">
+                                <label for="morning">Mañana</label>
+                                <input type="radio" name="time-preference" id="afternoon">
+                                <label for="afternoon">Tarde</label>
+                                <input type="radio" name="time-preference" id="night">
+                                <label for="night">Noche</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><strong>Otros</strong></legend>
+                            <div>
+                                <label for="comment">Comentario o sugerencia adicional</label>
+                                <textarea name="comment" id="comment" cols="30" rows="10" maxlength="5000" placeholder="Cualquier comentario que creas que puede ayudar a mejorar este espacio"></textarea>
+                            </div>
+                            <div>
+                                <label for="source">¿Cómo te enteraste del Club de Emprendedores de UCEMA?</label>
+                                    <select name="source" id="source">
+                                        <option value="" selected>Seleccione una opción</option>
+                                        <option value="family-friends">Amigos/Familia</option>
+                                        <option value="social-networks">Redes sociales</option>
+                                        <option value="brochure">Folletos</option>
+                                        <option value="others">Otros</option>
+                                    </select>        
+                            </div>
+                        </fieldset>
+                    <button type="submit"> ENVIAR </button>
+                    <button type="reset"> Restablecer campos</button>
+                    </form>
+                </div>
+            </section>            
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li> Visita nuestra Página Web y contactanos para cualquier consulta - <a href="https://ucema.edu.ar/node/1401"> Club de Emprendedores - UCEMA</a> </li>
+                    <li> Seguinos en Instagram <a href="https://www.instagram.com/xplora_ucema/"> Xplora UCEMA</a> y enterate de todas las novedades</li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <p> Universidad del CEMA - Ciudad Autónoma de Buenos Aires, Argentina</p>
+                <p> 2023 </p>
+            </div>   
+        </footer>
+</body>
+</html>
